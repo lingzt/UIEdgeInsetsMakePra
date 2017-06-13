@@ -9,17 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var button: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        self.button.imageEdgeInsets = UIEdgeInsetsMake (200,0,0,0) //move down 200  下移200
+//        self.button.imageEdgeInsets = UIEdgeInsetsMake (-200,0,0,0) //move 200 down 上移200
+//        self.button.imageEdgeInsets = UIEdgeInsetsMake (0,0,200,0) //move 200 down
+        self.button.imageEdgeInsets = UIEdgeInsetsMake (200,0,200,0) //stretch 200 up and down both ways 上下拉升各200，图片被拉长
+//        self.button.titleEdgeInsets = UIEdgeInsetsMake (200,0,0,0)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
